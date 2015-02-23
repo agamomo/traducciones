@@ -53,8 +53,8 @@ $ npm install --save-dev gulp
 ## Uso de Gulp
 
 Vamos a crear una tarea en Gulp para minimizar uno de nuestros archivos Javascript.
-1. Crea un archivo `gulpfile.js`. En este es en el que definirás tus tareas Gulp, que se ejecutarán mediante la orden `gulp`.
-2. Incluye lo siguiente en este archivo `gulpfile.js`:
+1.- Crea un archivo `gulpfile.js`. En este es en el que definirás tus tareas Gulp, que se ejecutarán mediante la orden `gulp`.
+2.- Incluye lo siguiente en este archivo `gulpfile.js`:
 
 ```javascript
 var gulp = require("gulp"),
@@ -66,7 +66,7 @@ gulp.task("minify", function () {
     .pipe(gulp.dest("build"));
 });
 ```
-3. Instala `gulp-uglify` usando `npm`:
+3.- Instala `gulp-uglify` usando `npm`:
 [UglifyJS](https://github.com/mishoo/UglifyJS) – un intérprete, compresor y embellecedor para JavaScript
 
 ```shell
