@@ -45,15 +45,15 @@
 <a id="contenido" class="anchor" href="#contenido" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contenido</h2>
 
 <ul>
-<li><p><a href="#que-es-gulp">¿Que es Gulp</a></p></li>
+<li><p><a href="#que-es-gulp">¿Que es Gulp?</a></p></li>
 <li><p><a href="#instalar-gulp">Instalar Gulp</a></p></li>
 <li><p><a href="#uso-de-gulp">Uso de Gulp</a></p></li>
 <li><p><a href="#canales-de-proceso">Canales de proceso</a></p></li>
-<li><p><a href="#gulp.src">gulp.src()</a></p></li>
+<li><p><a href="#gulp.src">gulp.src</a></p></li>
 <li><p><a href="#definicion-de-tareas">Definición de tareas</a></p></li>
 <li><p><a href="#tareas-por-defecto">Tareas por defecto</a></p></li>
 <li><p><a href="#complementos">Complementos</a></p></li>
-<li><p><a href="#el-complemento-gulp-load-plugins">El complemento <code>gulp-load-plugins</code></a></p></li>
+<li><p><a href="#el-complemento-gulp-load-plugins">El complemento gulp-load-plugins</a></p></li>
 <li><p><a href="#seguimiento-de-archivos">Seguimiento de archivos</a></p></li>
 <li><p><a href="#recarga-de-cambios-en-el-navegador">Recarga de cambios en el navegador</a></p></li>
 <li><p><a href="#%C2%BFpor-que-gulp?">¿Por que Gulp?</a></p></li>
@@ -156,8 +156,7 @@ $ gulp minify</pre></div>
 <p>Para una lectura más pormenorizada sobre canales de procesos -streams-, écha un vistazo a <a href="https://github.com/substack/stream-handbook">Stream Handbook</a>.</p>
 
 <h2>
-<a id="gulpsrc" class="anchor" href="#gulpsrc" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>gulp.src()</code>
-</h2>
+<a id="gulpsrc" class="anchor" href="#gulpsrc" aria-hidden="true"><span class="octicon octicon-link"></span></a>gulp.src</h2>
 
 <p>La función <code>gulp.src()</code> usa un <code>glob</code> -literalmente, pegote- (es decir, una cadena que coincide con uno o más archivos) o un vector de pegotes y devuelve un canal de procesos que puede canalizarse hacia los complementos -plugins-.</p>
 
@@ -261,8 +260,7 @@ gulp.task(<span class="pl-s1"><span class="pl-pds">"</span>js<span class="pl-pds
 <p>Los otros dos complementos son más claros: la función <code>uglify()</code> minimiza el código y la función <code>concat("app.js")</code> concatena todos los archivos en un único archivo <code>app.js</code>.</p>
 
 <h2>
-<a id="el-complemento-gulp-load-plugins" class="anchor" href="#el-complemento-gulp-load-plugins" aria-hidden="true"><span class="octicon octicon-link"></span></a>El complemento <code>gulp-load-plugins</code>
-</h2>
+<a id="el-complemento-gulp-load-plugins" class="anchor" href="#el-complemento-gulp-load-plugins" aria-hidden="true"><span class="octicon octicon-link"></span></a>El complemento gulp-load-plugins</h2>
 
 <p>Un módulo que encuentro especialmente útil es <code>gulp-load-plugins</code>, que carga automáticamente cualquier complemento Gulp de tu archivo <code>package.json</code> y los añade a un objeto. Su uso más básico es el siguiente:</p>
 
