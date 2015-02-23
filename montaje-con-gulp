@@ -5,7 +5,7 @@
 * [Gulp.js y Bootstrapp 3](http://stackoverflow.com/questions/21994582/using-gulp-to-compile-bootstrap-less-files-into-main-bootstrap-cs)
 
 ## Contenido
-* [¿Que es Gulp](#que-es-gulp)
+* [¿Que es Gulp?](#que-es-gulp)
 
 * [Instalar Gulp](#instalar-gulp)
 
@@ -13,7 +13,7 @@
 
 * [Canales de proceso](#canales-de-proceso)
 
-* [gulp.src()](#gulp.src)
+* [gulp.src](#gulp.src)
 
 * [Definición de tareas](#definicion-de-tareas)
 
@@ -21,7 +21,7 @@
 
 * [Complementos](#complementos)
 
-* [El complemento `gulp-load-plugins`](#el-complemento-gulp-load-plugins)
+* [El complemento gulp-load-plugins](#el-complemento-gulp-load-plugins)
 
 * [Seguimiento de archivos](#seguimiento-de-archivos)
 
@@ -120,7 +120,7 @@ Si estás familiarizado con Grunt, verás que esto es bastante diferente de como
 
 Para una lectura más pormenorizada sobre canales de procesos -streams-, écha un vistazo a [Stream Handbook](https://github.com/substack/stream-handbook).
 
-## `gulp.src()`
+## gulp.src
 La función `gulp.src()` usa un `glob` -literalmente, pegote- (es decir, una cadena que coincide con uno o más archivos) o un vector de pegotes y devuelve un canal de procesos que puede canalizarse hacia los complementos -plugins-.
 
 Gulp usa [node-glob](https://github.com/isaacs/node-glob) para obtener los archivos a partir del pegote o pegotes que has indicado. Lo más fácil es usar un ejemplo para explicarlo:
@@ -205,7 +205,7 @@ Habrás notado que llamamos al complemento JSHint dos veces. Esto es así, porqu
 
 Los otros dos complementos son más claros: la función `uglify()` minimiza el código y la función `concat("app.js")` concatena todos los archivos en un único archivo `app.js`.
 
-## El complemento `gulp-load-plugins`
+## El complemento gulp-load-plugins
 Un módulo que encuentro especialmente útil es `gulp-load-plugins`, que carga automáticamente cualquier complemento Gulp de tu archivo `package.json` y los añade a un objeto. Su uso más básico es el siguiente:
 ```javascript
 var gulpLoadPlugins = require("gulp-load-plugins"),
