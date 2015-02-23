@@ -87,20 +87,22 @@ Gulp es código libre y lo puedes encontrar en <a href="https://github.com/gulpj
 <h2>
 <a id="uso-de-gulp" class="anchor" href="#uso-de-gulp" aria-hidden="true"><span class="octicon octicon-link"></span></a>Uso de Gulp</h2>
 
-<p>Vamos a crear una tarea en Gulp para minimizar uno de nuestros archivos Javascript.
-1. Crea un archivo <code>gulpfile.js</code>. En este es en el que definirás tus tareas Gulp, que se ejecutarán mediante la orden <code>gulp</code>.
-2. Incluye lo siguiente en este archivo <code>gulpfile.js</code>:</p>
+<p>Vamos a crear una tarea en Gulp para minimizar uno de nuestros archivos Javascript.</p>
+
+<ol>
+<li>Crea un archivo <code>gulpfile.js</code>. En este es en el que definirás tus tareas Gulp, que se ejecutarán mediante la orden <code>gulp</code>.</li>
+<li>
+<p>Incluye lo siguiente en este archivo <code>gulpfile.js</code>:</p>
 
 <div class="highlight highlight-javascript"><pre><span class="pl-s">var</span> gulp <span class="pl-k">=</span> <span class="pl-s3">require</span>(<span class="pl-s1"><span class="pl-pds">"</span>gulp<span class="pl-pds">"</span></span>),
   uglify <span class="pl-k">=</span> <span class="pl-s3">require</span>(<span class="pl-s1"><span class="pl-pds">"</span>gulp-uglify<span class="pl-pds">"</span></span>);
 
 gulp.task(<span class="pl-s1"><span class="pl-pds">"</span>minify<span class="pl-pds">"</span></span>, <span class="pl-st">function</span> () {
-  gulp.<span class="pl-sc">src</span>(<span class="pl-s1"><span class="pl-pds">"</span>js/app.js<span class="pl-pds">"</span></span>)
+   gulp.<span class="pl-sc">src</span>(<span class="pl-s1"><span class="pl-pds">"</span>js/app.js<span class="pl-pds">"</span></span>)
     .pipe(uglify())
     .pipe(gulp.dest(<span class="pl-s1"><span class="pl-pds">"</span>build<span class="pl-pds">"</span></span>));
 });</pre></div>
-
-<ol>
+</li>
 <li>Instala <code>gulp-uglify</code> usando <code>npm</code>:
 <a href="https://github.com/mishoo/UglifyJS">UglifyJS</a> – un intérprete, compresor y embellecedor para JavaScript</li>
 </ol>
@@ -209,7 +211,7 @@ $ gulp minify</pre></div>
 
 <p>La ejecución de <code>gulp saludo</code> resulta en la impresión de "¡Hola mundo!" en la consola.</p>
 
-<p>Una tarea puede ser una lista de otras tareas. Supongamos que queremos definir una tarea de montaje que ejecute otras tres tareas <code>css</code>, <code>js</code> e <code>ìmgs</code>. Podemos hacerlo especificando un vector de tareas en lugar de la función:</p>
+<p>Una tarea puede ser una lista de otras tareas. Supongamos que queremos definir una tarea de montaje que ejecute otras tres tareas <code>css</code>, <code>js</code> e <code>imgs</code>. Podemos hacerlo especificando un vector de tareas en lugar de la función:</p>
 
 <div class="highlight highlight-javascript"><pre>gulp.task(<span class="pl-s1"><span class="pl-pds">"</span>build<span class="pl-pds">"</span></span>, [<span class="pl-s1"><span class="pl-pds">"</span>css<span class="pl-pds">"</span></span>, <span class="pl-s1"><span class="pl-pds">"</span>js<span class="pl-pds">"</span></span>, <span class="pl-s1"><span class="pl-pds">"</span>imgs<span class="pl-pds">"</span></span>]);</pre></div>
 
