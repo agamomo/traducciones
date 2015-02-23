@@ -13,9 +13,9 @@
 
 * [Canales de proceso](#canales-de-proceso)
 
-* [gulp.src](#gulp.src)
+* [gulp.src](#gulp-src)
 
-* [Definición de tareas](#definicion-de-tareas)
+* [Definición de tareas](#definición-de-tareas)
 
 * [Tareas por defecto](#tareas-por-defecto)
 
@@ -27,7 +27,7 @@
 
 * [Recarga de cambios en el navegador](#recarga-de-cambios-en-el-navegador)
 
-* [¿Por que Gulp?](#¿por-que-gulp?)
+* [¿Por que Gulp?](#por-que-gulp)
 
 La optimización de los recursos web y la comprobación del funcionamiento de la página en diferentes navegadores no son la parte más divertida del proceso de diseño. Por suerte, se trata de un conjunto de tareas repetitivas que pueden ser automatizadas con las herramientas adecuadas para así aumentar tu eficiencia.
 
